@@ -1,11 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import ChatComponent from './components/ChatComponent';
+import Profile from './components/Profile'
 
 function App() {
+  const styles = {
+    container:{
+      display: 'flex',
+      width: '100vw',
+      background: '#FFF',
+    }
+  }
   return (
-    <div className="App">
-      <h1>Hello world</h1>
+    <div className="App" style={styles.container}>
+        <ChatComponent />
+        <Profile /> 
+      
     </div>
   );
 }
