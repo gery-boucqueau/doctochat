@@ -12,14 +12,14 @@ const userToken = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiY29sZC1z
 
 chatClient.setUser(
   {
-    id: 'cold-sky-3',
+    id: 'braiwe',
     name: 'Doctor Maboul',
     image: 'https://getstream.io/random_svg/?id=cold-sky-3&name=Cold+sky'
   },
-  userToken,
+  chatClient.devToken('braiwe'),
 );
 
-const filters = { type: 'messaging', members: { $in: ['cold-sky-3'] } };
+const filters = { type: 'messaging', members: { $in: ['braiwe'] } };
 const sort = { last_message_at: -1 };
 const channels = chatClient.queryChannels(filters, sort);
 
