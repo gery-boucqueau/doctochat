@@ -1,6 +1,6 @@
 import React from 'react';
 
-const History = () => {
+const History = ({history}) => {
     const styles = {
         container: {
             background: '#FFF',
@@ -14,6 +14,7 @@ const History = () => {
     return (
         <div style={styles.container}>
             History :
+            <p>{history}</p>
         </div>
   );
 }

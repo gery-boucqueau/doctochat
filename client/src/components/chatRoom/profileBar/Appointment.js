@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Appointment = () => {
+const Appointment = ({appointment}) => {
     const styles = {
         container: {
             background: '#FFF',
@@ -15,6 +15,7 @@ const Appointment = () => {
     return (
         <div style={styles.container}>
             Appointment :
+            <p>{appointment}</p>
         </div>
   );
 }

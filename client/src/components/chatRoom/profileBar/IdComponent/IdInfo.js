@@ -1,6 +1,6 @@
 import React from 'react';
 
-const IdInfo = () => {
+const IdInfo = ({name,street, city, tel}) => {
     const styles = {
         container: {
             background: '#FFF',
@@ -13,10 +13,10 @@ const IdInfo = () => {
     
     return (
         <div style={styles.container}>
-            <h3>André Family</h3>
-            <p>Avenue des fleurs</p>
-            <p>Paris FRANCE</p>
-            <h3>0485/265.3263</h3>
+            <h3>{name}</h3>
+            <p>{street}</p>
+            <p>{city}</p>
+            <h3>{tel}</h3>
         </div>
   );
 }

@@ -2,7 +2,7 @@ import React from 'react';
 import IdInfo from './IdComponent/IdInfo';
 import IdPicture from './IdComponent/IdPicture';
 
-const Identity = () => {
+const Identity = ({name, street, city, tel, pictureUrl}) => {
     const styles = {
         container: {
             background: '#F2F2F2',
@@ -14,8 +14,12 @@ const Identity = () => {
     
     return (
         <div style={styles.container}>
-            <IdInfo />
-            <IdPicture />
+            <IdInfo 
+                name={name} 
+                street={street} 
+                city={city} 
+                tel={tel} />
+            <IdPicture pictureUrl={pictureUrl} />
         </div>
   );
 }

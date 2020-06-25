@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import ChatRoom from './components/chatRoom/ChatRoom';
-import {Switch, Route} from 'react-router-dom';
+//import {Switch, Route} from 'react-router-dom';
 
 function App() {
   const styles = {
