@@ -1,0 +1,32 @@
+[
+    {
+      "name":"André Family",
+      "pictureUrl":"",
+      "street":"Avenue des fleurs",
+      "city":"Paris FRANCE",
+      "tel":"+33 465/654.637",
+      "history":"Diabète de type B, subis une opération à la hanche le 28/02/2020, allergie: humoscozoïde",
+      "appointment":"prochain rendez-vous prévu le mardi 22/08 10H30",
+      "posology":"4g de pommagudol/jour, une tasse de café au lait, des stéroïdes à midi"
+    },
+    {
+      "name":"Emilie Loiseau",
+      "pictureUrl":"",
+      "street":"Rue des Marchandises",
+      "city":"Toulouse FRANCE",
+      "tel":"+33 447/634.222",
+      "history":"pas d antécédents",
+      "appointment":"prochain rendez-v",
+      "posology":""
+    },
+    {
+      "name":"Bart Sommers",
+      "pictureUrl":"",
+      "street":"Champs des Elysées",
+      "city":"Paris FRANCE",
+      "tel":"+33 498/986.387",
+      "history":"",
+      "appointment":"",
+      "posology":""
+    }
+  ]

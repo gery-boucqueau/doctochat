@@ -13,6 +13,37 @@ const Profile = () => {
             height: '100vh',
         }
     }
+    const users = [{
+            name : 'André Family',
+            pictureUrl: '',
+            street : 'Avenue des fleurs',
+            city: 'Paris FRANCE',
+            tel: '+33 465/654.637',
+            history: '',
+            appointment: '',
+            posology: '',
+        }, 
+        {
+            name : 'Emilie Loiseau',
+            pictureUrl: '',
+            street : 'Rue des Marchandises',
+            city: 'Toulouse FRANCE',
+            tel: '+33 447/634.222',
+            history: '',
+            appointment: '',
+            posology: '',
+        },
+        {
+            name : 'Bart Sommers',
+            pictureUrl: '',
+            street : 'Champs des Elysées',
+            city: 'Paris FRANCE',
+            tel: '+33 498/986.387',
+            history: '',
+            appointment: '',
+            posology: '',
+        }
+    ]
     
     return (
         <div style={styles.container}>
