@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Posology = () => {
+const Posology = ({posology}) => {
     const styles = {
         container: {
             background: '#FFF',
@@ -14,6 +14,7 @@ const Posology = () => {
     return (
         <div style={styles.container}>
             Posology :
+            <p>{posology}</p>
         </div>
   );
 }

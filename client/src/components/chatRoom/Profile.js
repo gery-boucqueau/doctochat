@@ -5,7 +5,7 @@ import Appointment from './profileBar/Appointment';
 import Posology from './profileBar/Posology';
 import Notes from './profileBar/Notes';
 
-const Profile = () => {
+const Profile = ({name, pictureUrl, street, city, tel, history, appointment, posology}) => {
     const styles = {
         container: {
             background: '#F2F2F2',
@@ -13,45 +13,19 @@ const Profile = () => {
             height: '100vh',
         }
     }
-    const users = [{
-            name : 'André Family',
-            pictureUrl: '',
-            street : 'Avenue des fleurs',
-            city: 'Paris FRANCE',
-            tel: '+33 465/654.637',
-            history: '',
-            appointment: '',
-            posology: '',
-        }, 
-        {
-            name : 'Emilie Loiseau',
-            pictureUrl: '',
-            street : 'Rue des Marchandises',
-            city: 'Toulouse FRANCE',
-            tel: '+33 447/634.222',
-            history: '',
-            appointment: '',
-            posology: '',
-        },
-        {
-            name : 'Bart Sommers',
-            pictureUrl: '',
-            street : 'Champs des Elysées',
-            city: 'Paris FRANCE',
-            tel: '+33 498/986.387',
-            history: '',
-            appointment: '',
-            posology: '',
-        }
-    ]
     
     return (
         <div style={styles.container}>
-            <Identity />
-            <History />
-            <Appointment />
-            <Posology />
-            <Notes />
+            <Identity 
+                name={name} 
+                pictureUrl={pictureUrl} 
+                street={street} 
+                city={city} 
+                tel={tel} />
+            <History history={history} />
+            <Appointment appointment={appointment} />
+            <Posology posology={posology}  />
+            <Notes  />
         </div>
   );
 }
