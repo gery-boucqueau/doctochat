@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
-import ChatComponent from './components/ChatComponent';
-import Profile from './components/Profile'
+import ChatRoom from './components/chatRoom/ChatRoom';
+import {Switch, Route} from 'react-router-dom';
 
 function App() {
   const styles = {
@@ -13,9 +13,7 @@ function App() {
   }
   return (
     <div className="App" style={styles.container}>
-        <ChatComponent />
-        <Profile /> 
-      
+        <ChatRoom />
     </div>
   );
 }

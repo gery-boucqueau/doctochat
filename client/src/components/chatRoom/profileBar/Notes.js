@@ -1,6 +1,7 @@
 import React from 'react';
 
 const Notes = () => {
+    
     const styles = {
         container: {
             background: '#FFF',
@@ -15,6 +16,11 @@ const Notes = () => {
     return (
         <div style={styles.container}>
             Notes :
+            <form >
+                <label >
+                    <textarea type="text" rows="6" cols="54" borderColor="transparent" borderWidth="0" placeholder="write here..." />
+                </label>
+            </form>
         </div>
   );
 }
