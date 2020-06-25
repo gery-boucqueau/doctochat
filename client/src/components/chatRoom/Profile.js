@@ -5,7 +5,7 @@ import Appointment from './profileBar/Appointment';
 import Posology from './profileBar/Posology';
 import Notes from './profileBar/Notes';
 
-const Profile = ({name, pictureUrl, street, city, tel, history, appointment, posology}) => {
+const Profile = ({currentUser}) => {
     const styles = {
         container: {
             background: '#F2F2F2',
@@ -17,14 +17,14 @@ const Profile = ({name, pictureUrl, street, city, tel, history, appointment, pos
     return (
         <div style={styles.container}>
             <Identity 
-                name={name} 
-                pictureUrl={pictureUrl} 
-                street={street} 
-                city={city} 
-                tel={tel} />
-            <History history={history} />
-            <Appointment appointment={appointment} />
-            <Posology posology={posology}  />
+                name={currentUser.name} 
+                pictureUrl={currentUser.image} 
+                street={currentUser.street} 
+                city={currentUser.city} 
+                tel={currentUser.tel} />
+            <History history={currentUser.history} />
+            <Appointment appointment={currentUser.appointment} />
+            <Posology posology={currentUser.posology}  />
             <Notes  />
         </div>
   );
